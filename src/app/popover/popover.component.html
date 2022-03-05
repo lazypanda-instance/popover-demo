@@ -1,6 +1,6 @@
-<div class="container-fluid m-4">
+<div class="container-fluid p-4">
     <div class="row">
-        <div class="col-md-3 mt-4">
+        <div class="col-md-3 mt-4 container-style">
             <a id='hover-me-lbl' 
                data-container="body" 
                data-trigger="hover" 
@@ -10,7 +10,7 @@
                 <label>Hover Me!</label>
             </a>
         </div>
-        <div class="col-md-3 mt-4">
+        <div class="col-md-3 mt-4 container-style">
             <button id="click-me-btn"
                     class="btn btn-primary" 
                     data-container="body" 
@@ -20,7 +20,7 @@
                     [attr.data-content]="btnPopoverTextValue"
                     (click)="showPopover($event)">Click Me!</button>
         </div>
-        <div class="col-md-3 mt-4">
+        <div class="col-md-3 mt-4 container-style">
             <button id="hover-me-btn"
                     class="btn btn-danger" 
                     data-container="body" 
@@ -31,7 +31,7 @@
                     data-html="true"
                     (click)="showPopoverWithTemplate($event)">Hover Me!</button>
         </div>
-        <div class="col-md-3 mt-4">
+        <div class="col-md-3 mt-4 container-style">
             <a id='auto-popover-lbl' 
                 data-container="body" 
                 data-trigger="hover" 
