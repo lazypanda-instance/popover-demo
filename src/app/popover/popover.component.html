@@ -1,0 +1,45 @@
+<div class="container-fluid m-4">
+    <div class="row">
+        <div class="col-md-3 mt-4">
+            <a id='hover-me-lbl' 
+               data-container="body" 
+               data-trigger="hover" 
+               data-toggle="popover" 
+               data-placement="top" 
+               [attr.data-content]="lblPopoverTextValue">
+                <label>Hover Me!</label>
+            </a>
+        </div>
+        <div class="col-md-3 mt-4">
+            <button id="click-me-btn"
+                    class="btn btn-primary" 
+                    data-container="body" 
+                    data-trigger="click" 
+                    data-toggle="popover" 
+                    data-placement="top" 
+                    [attr.data-content]="btnPopoverTextValue"
+                    (click)="showPopover($event)">Click Me!</button>
+        </div>
+        <div class="col-md-3 mt-4">
+            <button id="hover-me-btn"
+                    class="btn btn-danger" 
+                    data-container="body" 
+                    data-trigger="hover" 
+                    data-toggle="popover" 
+                    data-placement="bottom" 
+                    [attr.data-content]="btnPopoverTemplate"
+                    data-html="true"
+                    (click)="showPopoverWithTemplate($event)">Hover Me!</button>
+        </div>
+        <div class="col-md-3 mt-4">
+            <a id='auto-popover-lbl' 
+                data-container="body" 
+                data-trigger="hover" 
+                data-toggle="popover" 
+                data-placement="top" 
+                [attr.data-content]="autoPopoverTxtValue">
+                <label>I am Auto popped Popover!</label>
+            </a>
+        </div>
+    </div>
+</div>
